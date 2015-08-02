@@ -4,6 +4,9 @@ angular.module('arabicAppApp')
   .controller('SettingsCtrl', function ($scope, User, Auth) {
     $scope.errors = {};
 
+
+    console.log('hi');
+
     $scope.changePassword = function(form) {
       $scope.submitted = true;
       if(form.$valid) {

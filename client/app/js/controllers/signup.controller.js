@@ -5,6 +5,9 @@ angular.module('arabicAppApp')
     $scope.user = {};
     $scope.errors = {};
 
+
+    console.log('hi');
+
     $scope.register = function(form) {
       $scope.submitted = true;
 

@@ -4,6 +4,10 @@ angular.module('arabicAppApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
     $scope.awesomeThings = [];
 
+
+
+    console.log('hi');
+
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
       socket.syncUpdates('thing', $scope.awesomeThings);

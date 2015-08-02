@@ -5,6 +5,8 @@ angular.module('arabicAppApp')
     $scope.user = {};
     $scope.errors = {};
 
+    console.log('hi');
+
     $scope.login = function(form) {
       $scope.submitted = true;
 
