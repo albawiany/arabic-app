@@ -1,21 +1,15 @@
 div(ng-include='"components/navbar/navbar.html"')
-
-header#banner.hero-unit
-  .container
-    h1 Nasr's Arabic App
+.main-page-container
+  .header
+    h1 Arabic App Skeleton
     img(src='assets/images/shabi_lines.gif', alt='Arabic Calligraphy')
-.container
-  .row
-    .col-lg-12
-      h1.page-header Todo:
-      ul.nav.nav-tabs.nav-stacked.col-md-4.col-lg-4.col-sm-6(ng-repeat='thing in awesomeThings')
+  .body
+      .body-text Todo:
+      ul(ng-repeat='thing in awesomeThings')
         li
           a(href='#', tooltip='{{thing.info}}')
             | {{thing.name}}
             button.close(type='button', ng-click='deleteThing(thing)') ×
-  form.thing-form
-    label This is where text files will go
-    p.input-group
-      input.form-control(type='text', placeholder='What else is left to do?', ng-model='newThing')
-      span.input-group-btn
-        button.btn.btn-primary(type='submit', ng-click='addThing()') Add New
+      .body-text-main
+          input.form-control(type='text', placeholder='What else is left to do?', ng-model='newThing')
+          button.btn.btn-primary(type='submit', ng-click='addThing()') Add New
