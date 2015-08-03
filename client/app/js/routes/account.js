@@ -5,17 +5,17 @@ angular.module('arabicAppApp')
     $stateProvider
       .state('login', {
         url: '/login',
-        templateUrl: 'app/account/login/login.html',
+        templateUrl: 'app/account/login.html',
         controller: 'LoginCtrl'
       })
       .state('signup', {
         url: '/signup',
-        templateUrl: 'app/account/signup/signup.html',
+        templateUrl: 'app/account/signup.html',
         controller: 'SignupCtrl'
       })
       .state('settings', {
         url: '/settings',
-        templateUrl: 'app/account/settings/settings.html',
+        templateUrl: 'app/account/settings.html',
         controller: 'SettingsCtrl',
         authenticate: true
       });

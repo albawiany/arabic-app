@@ -5,7 +5,7 @@ angular.module('arabicAppApp')
     $stateProvider
       .state('main', {
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/account/main.html',
         controller: 'MainCtrl'
       });
   });

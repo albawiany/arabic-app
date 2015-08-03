@@ -5,7 +5,7 @@ angular.module('arabicAppApp')
     $stateProvider
       .state('admin', {
         url: '/admin',
-        templateUrl: 'app/admin/admin.html',
+        templateUrl: 'app/account/admin.html',
         controller: 'AdminCtrl'
       });
   });
