@@ -133,3 +133,25 @@
   -ms-align-self: @align;
   align-self: @align;
 }
+.flex-column-container {
+  .flex-display(flex) !important;
+  .flex-direction(column);
+  .flex-fixed-height {
+    .flex(0 0 auto);
+  }
+  .flex-fluid-height {
+    .flex(1 1 auto);
+  }
+}
+
+.flex-row-container {
+  .flex-display(flex) !important;
+  .flex-direction(row);
+  .flex-fixed-width {
+    .flex(0 0 auto);
+  }
+  .flex-fluid-width {
+    .flex(1 1 auto);
+  }
+}
+

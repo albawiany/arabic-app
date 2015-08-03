@@ -1,0 +1,16 @@
+div(ng-include='"components/navbar/navbar.html"')
+.main-page-container
+    .header
+        h1 Arabic App Skeleton
+        .image-container
+            img(src='assets/images/shabi_lines.gif', alt='Arabic Calligraphy')
+    .body
+        .body-text Todo:
+        ul(ng-repeat='thing in awesomeThings')
+            li
+                a(href='#', tooltip='{{thing.info}}')
+                    | {{thing.name}}
+                    button.close(type='button', ng-click='deleteThing(thing)') ×
+        .body-text-main
+            input.form-control(type='text', placeholder='What else is left to do?', ng-model='newThing')
+            button.btn.btn-primary(type='submit', ng-click='addThing()') Add New
