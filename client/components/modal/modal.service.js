@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('arabicAppApp')
+angular.module('arabicApp')
   .factory('Modal', function ($rootScope, $modal) {
     /**
      * Opens a modal

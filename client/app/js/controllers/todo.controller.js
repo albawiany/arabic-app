@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('arabicAppApp')
+angular.module('arabicApp')
     .controller('TodoCtrl', function ($scope, $http, socket) {
         $scope.awesomeThings = [];
 

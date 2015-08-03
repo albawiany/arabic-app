@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('arabicAppApp')
+angular.module('arabicApp')
   .controller('LoginCtrl', function ($scope, Auth, $location) {
     $scope.user = {};
     $scope.errors = {};

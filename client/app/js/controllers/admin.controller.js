@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('arabicAppApp')
+angular.module('arabicApp')
   .controller('AdminCtrl', function ($scope, $http, Auth, User) {
 
     console.log('hi');

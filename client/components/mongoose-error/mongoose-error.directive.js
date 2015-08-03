@@ -3,7 +3,7 @@
 /**
  * Removes server error when user updates input
  */
-angular.module('arabicAppApp')
+angular.module('arabicApp')
   .directive('mongooseError', function () {
     return {
       restrict: 'A',

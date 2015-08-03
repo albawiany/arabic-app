@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('arabicAppApp')
+angular.module('arabicApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('main', {
