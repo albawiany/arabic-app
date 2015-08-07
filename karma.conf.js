@@ -25,6 +25,8 @@ module.exports = function(config) {
       'client/bower_components/angular-animate/angular-animate.min.js',
       'client/bower_components/angular-strap/dist/angular-strap.min.js',
       'client/bower_components/angular-strap/dist/angular-strap.tpl.js',
+      'client/bower_components/ng-file-upload/ng-file-upload-shim.min.js',
+      'client/bower_components/ng-file-upload/ng-file-upload.min.js',
       'client/app/app.js',
       'client/app/app.coffee',
       'client/app/**/*.js',

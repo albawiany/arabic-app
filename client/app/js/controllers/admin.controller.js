@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('arabicApp')
-  .controller('AdminCtrl', function ($scope, $http, Auth, User) {
+  .controller('AdminCtrl',
+  ['$scope','$http','Auth','User', function ($scope, $http, Auth, User) {
 
     console.log('hi');
     // Use the User $resource to fetch all users
@@ -15,4 +16,6 @@ angular.module('arabicApp')
         }
       });
     };
-  });
+  }]);
+
+

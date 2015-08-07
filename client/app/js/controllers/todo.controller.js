@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('arabicApp')
-    .controller('TodoCtrl', function ($scope, $http, socket) {
+    .controller('TodoCtrl',[ '$scope', '$http','socket' ,function ($scope, $http, socket) {
         $scope.awesomeThings = [];
-
-        console.log('hi');
 
         $http.get('/api/things').success(function(awesomeThings) {
             $scope.awesomeThings = awesomeThings;
@@ -26,5 +24,4 @@ angular.module('arabicApp')
         $scope.$on('$destroy', function () {
             socket.unsyncUpdates('thing');
         });
-
-    });
+    }]);

@@ -1,11 +1,8 @@
 'use strict';
 
 angular.module('arabicApp')
-  .controller('SettingsCtrl', function ($scope, User, Auth) {
+  .controller('SettingsCtrl',['$scope', 'User', 'Auth',function ($scope, User, Auth) {
     $scope.errors = {};
-
-
-    console.log('hi');
 
     $scope.changePassword = function(form) {
       $scope.submitted = true;
@@ -21,4 +18,4 @@ angular.module('arabicApp')
         });
       }
 		};
-  });
+  }]);

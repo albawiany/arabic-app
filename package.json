@@ -91,5 +91,16 @@
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
-  "private": true
+  "private": true,
+  "description": "arabic applciation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmaswood/arabic-app.git"
+  },
+  "author": "Nasr Maswood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmaswood/arabic-app/issues"
+  },
+  "homepage": "https://github.com/nmaswood/arabic-app#readme"
 }

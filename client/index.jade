@@ -61,6 +61,11 @@ html.no-js
     script(src='bower_components/angular-animate/angular-animate.min.js')
     script(src='bower_components/angular-strap/dist/angular-strap.min.js')
     script(src='bower_components/angular-strap/dist/angular-strap.tpl.js')
+    script(src='bower_components/ng-file-upload/ng-file-upload-shim.min.js')
+    script(src='bower_components/ng-file-upload/ng-file-upload.min.js')
+
+
+
 
     // endbower
     script(src='socket.io-client/socket.io.js')
@@ -79,12 +84,14 @@ html.no-js
     script(src='app/js/controllers/main.controller.js')
     script(src='app/js/controllers/navbar.controller.js')
     script(src='app/js/controllers/todo.controller.js')
+    script(src='app/js/controllers/exercises.controller.js')
 
-    script(src='app/js/routes/admin.js')
-    script(src='app/js/routes/main.js')
-    script(src='app/js/routes/account.js')
+    script(src='app/js/routes/admin.route.js')
+    script(src='app/js/routes/main.route.js')
+    script(src='app/js/routes/account.route.js')
 
-
+    script(src='app/js/services/analytica.service.js')
+    script(src='app/js/services/exerciseProvider.service.js')
 
     script(src='components/auth/auth.service.js')
     script(src='components/auth/user.service.js')

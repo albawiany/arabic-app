@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('arabicApp')
-  .controller('LoginCtrl', function ($scope, Auth, $location) {
+  .controller('LoginCtrl', ['$scope','Auth','$location', function ($scope, Auth, $location) {
     $scope.user = {};
     $scope.errors = {};
 
@@ -25,4 +25,4 @@ angular.module('arabicApp')
       }
     };
 
-  });
+  }]);
