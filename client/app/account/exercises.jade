@@ -1,4 +1,3 @@
 div(ng-include='"components/navbar/navbar.html"')
-h1
-  | Hi how are you?
-h2 {{exercises.quizQuestions[0].question}}
+insert-passage(passage-array='{{readings}}')
+insert-excerises(question-array='{{exercises.quizQuestions}}')

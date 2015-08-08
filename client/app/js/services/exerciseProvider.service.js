@@ -8,27 +8,34 @@ angular.module('exerciseProvider', [])
     };
     return exerciseProvider;
   }])
-  .directive('insertExcerises', function(){
+  .directive('insertPassage', function(){
     'use strict';
-    var data,index;
     return {
       restrict: 'E',
-      scope : {
-        data:'@',
-        index: '@'
+      link: function(scope,element,attrs){
+        scope.passageArray = JSON.parse(attrs.passageArray);
       },
-      template: 
-                '<div>The question you must answer is </div>'  +
-                '<div>{{data[index].question}}</div>',
-      link: function(){
-        console.log(data);
-      }
+      template:
+      '<div ng-repeat="n in passageArray track by $index">' +
+      '<h1>unit : {{n.unit}}</h1>' +
+      '<h2>{{n.title}}</h2>' +
+      '<p>{{n.content}}</p>' +
+      '</div>'
+    };
+  })
+  .directive('insertExcerises', function(){
+    'use strict';
+    return {
+      restrict: 'E',
+      link: function(scope,element,attrs){
+        scope.questionArray = JSON.parse(attrs.questionArray);
+      },
+      template:
+        '<div ng-repeat="n in questionArray track by $index">' +
+        '<h1>{{n.question}}</h1>' +
+        '<h4>{{n.option1}}</h4>' +
+        '<h4>{{n.option1}}</h4>' +
+        '<h4>{{n.option1}}</h4>' +
+        '</div>'
     };
   });
-
-
-//        question : '',
-//option1 : '',
- // option2 : '',
- // option3 : '',
-  //correct : ''
