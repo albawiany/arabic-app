@@ -4,7 +4,6 @@ angular.module('arabicApp')
   .controller('AdminCtrl',
   ['$scope','$http','Auth','User', function ($scope, $http, Auth, User) {
 
-    console.log('hi');
     // Use the User $resource to fetch all users
     $scope.users = User.query();
 
