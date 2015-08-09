@@ -9,7 +9,8 @@ angular.module('arabicApp', [
   'ui.bootstrap',
   'ngAnimate',
   'mgcrea.ngStrap',
-  'exerciseProvider'
+  'exerciseProvider',
+  'arabicProvider'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider

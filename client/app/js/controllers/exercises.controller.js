@@ -3,12 +3,12 @@
 
 
 angular.module('arabicApp')
-  .controller('ExercisesCtrl', ['$scope', '$http', function ($scope, $http) {
+  .controller('ExercisesCtrl', ['$scope','arabicProvider', function ($scope,arabicProvider) {
 
     $scope.exercises = {};
+    $scope.readings = {};
 
-
-    $scope.readings = [{
+    $scope.readings.Passages = [{
       "unit": 1,
       "title": 'ابن بطوطة و رحلة في التاريخ',
       "content": 'هو ابن بطوطة محمد اللواتي الذي يشتهر باسم ابن بطوطة، ولد سنة ٧٠٣ ه ١٣٠٤  م'
@@ -43,11 +43,13 @@ angular.module('arabicApp')
 
     $scope.exercises.quizQuestions =
       [{
-        "question": "What is this",
-        "option1": "A",
-        "option2": "B",
-        "option3": "C",
-        "correct" : ""
+        "question": "ما كان ابن بطوطة",
+        "option1": "رحالة",
+        "option2": "دكتور",
+        "option3": "عصكري",
+        "correct" : "1"
       }];
+
+    console.log(arabicProvider.convertNumberToArabic(321));
 
   }]);
