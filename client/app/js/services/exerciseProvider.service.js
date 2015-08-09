@@ -16,10 +16,12 @@ angular.module('exerciseProvider', [])
         scope.passageArray = JSON.parse(attrs.passageArray);
       },
       template:
-      '<div ng-repeat="n in passageArray track by $index">' +
-      '<h1>unit : {{n.unit}}</h1>' +
-      '<h2>{{n.title}}</h2>' +
-      '<p>{{n.content}}</p>' +
+      '<div  class="passage-box-container" ng-repeat="n in passageArray track by $index">' +
+       '<div class="passage-box">' +
+      '<div class="unit-title"><ul>{{n.unit}}</ul></div>' +
+      '<div class="passage-title">{{n.title}}</div>' +
+      '<div class="passage-text">{{n.content}}</div>' +
+      '</div>'+
       '</div>'
     };
   })
