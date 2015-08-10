@@ -3,10 +3,9 @@
 
 
 angular.module('arabicApp')
-  .controller('ExercisesCtrl', ['$scope','arabicProvider', function ($scope,arabicProvider) {
+  .controller('ExercisesCtrl', ['$scope','$window', function ($scope,$window) {
 
     $scope.exercises = {};
-
 
     $scope.exercises.quizQuestions =
       [{
@@ -14,8 +13,20 @@ angular.module('arabicApp')
         "option1": "رحالة",
         "option2": "دكتور",
         "option3": "عصكري",
-        "correct" : "1"
+        "correct" : "1",
+        "answered" : ''
       }];
+
+    $scope.testing = function(input){
+    console.log(input.toElement);
+    };
+    
+    $scope.func3 = function(){
+      console.log("func3");
+    };
+
+
+
 
 
   }]);
