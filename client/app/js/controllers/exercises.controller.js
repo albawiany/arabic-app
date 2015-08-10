@@ -14,7 +14,9 @@ angular.module('arabicApp')
         "option2": "دكتور",
         "option3": "عصكري",
         "correct" : "1",
-        "answered" : ''
+        "answered" : [],
+        "bool" : 1,
+        "status" : 'this is just a test'
       },
         {
           "question": "ما كان ابن بطوطة",
@@ -22,16 +24,9 @@ angular.module('arabicApp')
           "option2": "دكتور",
           "option3": "عصكري",
           "correct" : "1",
-          "answered" : ''
+          "answered" : [],
+          "bool" : 0,
+          "status" : 'indeed it is'
         }];
-
-    $scope.func3 =  function(input){
-      console.log("Console logged" + input);
-    };
-
-
-
-
-
 
   }]);
