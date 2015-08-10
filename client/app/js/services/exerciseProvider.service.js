@@ -34,10 +34,10 @@ angular.module('exerciseProvider', [])
       },
       template:
         '<div ng-repeat="n in questionArray track by $index">' +
-        '<h1>{{n.question}}</h1>' +
-        '<h4>{{n.option1}}</h4>' +
-        '<h4>{{n.option1}}</h4>' +
-        '<h4>{{n.option1}}</h4>' +
-        '</div>'
+        '<div class="question">{{n.question}}' +
+        '<div class="option">{{n.option1}}</div>' +
+        '<div class="option">{{n.option2}}</div>' +
+        '<div class="option">{{n.option1}}</div>' +
+        '</div>'+ '</div>'
     };
   });
