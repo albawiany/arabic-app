@@ -15,15 +15,20 @@ angular.module('arabicApp')
         "option3": "عصكري",
         "correct" : "1",
         "answered" : ''
-      }];
+      },
+        {
+          "question": "ما كان ابن بطوطة",
+          "option1": "رحالة",
+          "option2": "دكتور",
+          "option3": "عصكري",
+          "correct" : "1",
+          "answered" : ''
+        }];
 
-    $scope.testing = function(input){
-    console.log(input.toElement);
+    $scope.func3 =  function(input){
+      console.log("Console logged" + input);
     };
-    
-    $scope.func3 = function(){
-      console.log("func3");
-    };
+
 
 
 
