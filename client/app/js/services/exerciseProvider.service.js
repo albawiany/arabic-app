@@ -1,4 +1,3 @@
-// jshint ignore: start
 angular.module('exerciseProvider', [])
   .factory('exerciseProvider', [function () {
     'use strict';
@@ -28,22 +27,22 @@ angular.module('exerciseProvider', [])
       scope: {
         questionArray: '='
       },
-      link: function (scope, element, attrs) {
-        scope.test = 'hello';
+      link: function (scope) {
+
         scope.answerTheQuestion = function (input, answer) {
+
           if (scope.$parent.exercises) {
             scope.$parent.exercises.quizQuestions[input].answered.push(answer);
-            if (scope.$parent.exercises.quizQuestions[input].correct == answer) {
-              scope.$parent.exercises.quizQuestions[input].bool = 1;
-              scope.$parent.exercises.quizQuestions[input].status='Correct';
+            if (scope.$parent.exercises.quizQuestions[input].correct === answer) {
+              scope.$parent.exercises.quizQuestions[input].status = 'Correct';
             }
             else {
-              scope.$parent.exercises.quizQuestions[input].status='Incorrect';
-              $timeout(function () {
-                scope.$parent.exercises.quizQuestions[input].status='';
-              }, 3000)
+              scope.$parent.exercises.quizQuestions[input].status = 'Incorrect';
             }
-          };
+          }
+          $timeout(function () {
+            scope.$parent.exercises.quizQuestions[input].status = '';
+          }, 3000);
         };
       },
       template: '<div ng-repeat="n in questionArray track by $index">' +
@@ -51,7 +50,7 @@ angular.module('exerciseProvider', [])
       '<div class="option" ng-click="answerTheQuestion($index,0)">{{n.option1}}</div>' +
       '<div class="option" ng-click="answerTheQuestion($index,1)">{{n.option2}}</div>' +
       '<div class="option" ng-click="answerTheQuestion($index,2)">{{n.option3}}</div>' +
-      '<div ng-show="n.status"> {{n.status}}</div>' +
+      '<div ng-show="n.status" class="status-message"> {{n.status}}</div>' +
       '</div>' + '</div>'
     };
   });

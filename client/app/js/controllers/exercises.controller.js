@@ -15,8 +15,7 @@ angular.module('arabicApp')
         "option3": "عصكري",
         "correct" : "1",
         "answered" : [],
-        "bool" : 1,
-        "status" : 'this is just a test'
+        "status" : ''
       },
         {
           "question": "ما كان ابن بطوطة",
@@ -25,8 +24,7 @@ angular.module('arabicApp')
           "option3": "عصكري",
           "correct" : "1",
           "answered" : [],
-          "bool" : 0,
-          "status" : 'indeed it is'
+          "status" : ''
         }];
 
   }]);
