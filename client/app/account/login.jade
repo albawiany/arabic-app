@@ -10,7 +10,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .form-group
         .button-container
           button(type='submit') Login
-          button(href='/signup') Register
+          button(ng-click='redirectToSignup()') Sign Up
         .error-box
           p(ng-show='form.email.$error.required && form.password.$error.required && submitted')
             | Please enter your email and password.

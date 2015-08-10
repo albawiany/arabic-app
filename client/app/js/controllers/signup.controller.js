@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('arabicApp')
-  .controller('SignupCtrl',['$scope', 'Auth', '$location', function ($scope, Auth, $location) {
+  .controller('SignupCtrl',['$scope', 'Auth', '$location','$window', function ($scope, Auth, $location,$window) {
     $scope.user = {};
     $scope.errors = {};
 
-
-    console.log('hi');
+    $scope.redirectToLogin = function() {
+      $window.location.href = '/login';
+    };
 
     $scope.register = function(form) {
       $scope.submitted = true;
