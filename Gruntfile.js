@@ -706,7 +706,7 @@ module.exports = function (grunt) {
     'injector:less',
     'concurrent:dist',
     'injector',
-    'wiredep',
+   // 'wiredep',
     'useminPrepare',
     'autoprefixer',
     'ngtemplates',

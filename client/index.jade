@@ -36,14 +36,7 @@ html.no-js
         |  to improve your experience.
     // Add your site or application content here
     div(ui-view='')
-    // Google Analytics: change UA-XXXXX-X to be your site's ID
-    script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X');
-      ga('send', 'pageview');
+
     //if lt IE 9
       script(src='bower_components/es5-shim/es5-shim.js')
       script(src='bower_components/json3/lib/json3.min.js')
@@ -56,13 +49,10 @@ html.no-js
     script(src='bower_components/angular-sanitize/angular-sanitize.js')
     script(src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js')
     script(src='bower_components/lodash/dist/lodash.compat.js')
+    script(src='bower_components/underscore/underscore-min.js')
     script(src='bower_components/angular-socket-io/socket.js')
     script(src='bower_components/angular-ui-router/release/angular-ui-router.js')
-    script(src='bower_components/angular-animate/angular-animate.min.js')
-    script(src='bower_components/angular-strap/dist/angular-strap.min.js')
-    script(src='bower_components/angular-strap/dist/angular-strap.tpl.js')
-    script(src='bower_components/ng-file-upload/ng-file-upload-shim.min.js')
-    script(src='bower_components/ng-file-upload/ng-file-upload.min.js')
+    script(src='bower_components/angular-audio/app/angular.audio.js')
 
 
     // endbower

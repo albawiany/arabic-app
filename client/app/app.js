@@ -7,10 +7,9 @@ angular.module('arabicApp', [
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
-  'ngAnimate',
-  'mgcrea.ngStrap',
   'exerciseProvider',
-  'arabicProvider'
+  'arabicProvider',
+  'ngAudio'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
