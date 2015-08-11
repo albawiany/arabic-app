@@ -4,3 +4,6 @@ div(ng-include='"components/navbar/navbar.html"')
     h1 Arabic App Skeleton
     .image-container
         img(src='assets/images/shabi_lines.gif', alt='Arabic Calligraphy')
+    button(ng-click="playSound()") Play
+    button(ng-click='audio.paused ? audio.play() : audio.pause()') {{audio.paused ?"Play" : "Pause" }}
+
