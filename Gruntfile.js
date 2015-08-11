@@ -495,7 +495,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.client %>',
           src: [
-            '{app,components}/**/*.jade'
+            '{client,app,components}/**/*.jade'
           ],
           dest: '.tmp',
           ext: '.html'
@@ -722,7 +722,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'test',
     'build'
   ]);
 };
