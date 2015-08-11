@@ -16,16 +16,6 @@ angular.module('arabicApp')
         templateUrl:'app/account/exercises.html',
         controller:'ExercisesCtrl'
       })
-      .state('passages',{
-        url: '/passages',
-        templateUrl:'app/account/passages.html',
-        controller:'PassagesCtrl'
-      })
-      .state('progress',{
-        url: '/progress',
-        templateUrl:'app/account/progress.html',
-        controller:'ProgressCtrl'
-      })
       .state('signup', {
         url: '/signup',
         templateUrl: 'app/account/signup.html',

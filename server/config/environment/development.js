@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/arabicapp-dev'
+    uri: 'mongodb://admin:admin@ds031193.mongolab.com:31193/arabicappdb'
   },
 
   seedDB: true

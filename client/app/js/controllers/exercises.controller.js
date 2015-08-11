@@ -3,7 +3,7 @@
 
 
 angular.module('arabicApp')
-  .controller('ExercisesCtrl', ['$scope','$window', function ($scope,$window) {
+  .controller('ExercisesCtrl', ['$scope', function ($scope) {
 
     $scope.exercises = {};
 
