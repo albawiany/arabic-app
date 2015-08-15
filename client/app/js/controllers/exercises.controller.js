@@ -13,7 +13,7 @@ angular.module('arabicApp')
         "option1": "رحالة",
         "option2": "دكتور",
         "option3": "عصكري",
-        "correct" : "1",
+        "correct" : 1,
         "answered" : [],
         "status" : ''
       },
@@ -22,7 +22,7 @@ angular.module('arabicApp')
           "option1": "رحالة",
           "option2": "دكتور",
           "option3": "عصكري",
-          "correct" : "1",
+          "correct" : 1,
           "answered" : [],
           "status" : ''
         }];
