@@ -20,6 +20,13 @@ angular.module('arabicApp')
         $scope.deleteThing = function(thing) {
             $http.delete('/api/things/' + thing._id);
         };
+        $http.post('/api/scores', { name: $scope.newThing, score: 2 });
+
+    $http.get('/api/scores').success(function(input) {
+      console.log(input)
+    });
+
+
 
         $scope.$on('$destroy', function () {
             socket.unsyncUpdates('thing');
