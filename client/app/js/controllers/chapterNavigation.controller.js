@@ -3,5 +3,8 @@
 
 
 angular.module('arabicApp')
-  .controller('ChapterNavigationCtrl', ['$scope' ,function ($scope) {
+  .controller('ChapterNavigationCtrl', ['$scope', 'chapterNavigation',function ($scope, chapterNavigation) {
+
+    $scope.chapterOne = chapterNavigation.chapterOne;
+    console.log($scope.chapterOne);
   }]);

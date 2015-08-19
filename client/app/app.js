@@ -10,7 +10,8 @@ angular.module('arabicApp', [
   'exerciseProvider',
   'arabicProvider',
   'materialProvider',
-  'ngAudio'
+  'ngAudio',
+  'chapterNavigation'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
