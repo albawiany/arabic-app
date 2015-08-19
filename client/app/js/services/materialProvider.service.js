@@ -33,7 +33,25 @@ angular.module('materialProvider', [])
         'واهتم المستشرقون منذ اواءل االقرن الماضي برحلة ابن بطوطة،' +
         'فنشرت منها اجزاء، ثم نشرت الرحلة  بعدها بالكامل في' +
         'ترجمة فرنسية سنة ١٨٥٩ ، وطبعت في القاهرة ر بيروت عدة طبعات، ثم ترجمت الى الالمانية سنة ١٩١١'
-      }]
+      }],
+      chapterOneExercises: [{
+        "question": "ما كان ابن بطوطة",
+        "option1": "رحالة",
+        "option2": "دكتور",
+        "option3": "عصكري",
+        "correct" : 1,
+        "answered" : [],
+        "status" : ''
+      },
+        {
+          "question": "ما كان ابن بطوطة",
+          "option1": "رحالة",
+          "option2": "دكتور",
+          "option3": "عصكري",
+          "correct" : 1,
+          "answered" : [],
+          "status" : ''
+        }]
     };
 
     return materialProvider;

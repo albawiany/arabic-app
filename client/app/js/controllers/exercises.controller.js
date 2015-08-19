@@ -3,28 +3,11 @@
 
 
 angular.module('arabicApp')
-  .controller('ExercisesCtrl', ['$scope', function ($scope) {
+  .controller('ExercisesCtrl', ['$scope','materialProvider', function ($scope,materialProvider) {
 
     $scope.exercises = {};
 
-    $scope.exercises.quizQuestions =
-      [{
-        "question": "ما كان ابن بطوطة",
-        "option1": "رحالة",
-        "option2": "دكتور",
-        "option3": "عصكري",
-        "correct" : 1,
-        "answered" : [],
-        "status" : ''
-      },
-        {
-          "question": "ما كان ابن بطوطة",
-          "option1": "رحالة",
-          "option2": "دكتور",
-          "option3": "عصكري",
-          "correct" : 1,
-          "answered" : [],
-          "status" : ''
-        }];
+    $scope.exercises.quizQuestions = materialProvider.chapterOneExercises;
+
 
   }]);
