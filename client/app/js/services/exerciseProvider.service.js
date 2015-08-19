@@ -35,8 +35,7 @@ angular.module('exerciseProvider', [])
             scope.$parent.exercises.quizQuestions[input].answered.push(answer);
             if (scope.$parent.exercises.quizQuestions[input].correct === answer) {
               scope.$parent.exercises.quizQuestions[input].status = 'Correct';
-            }
-            else {
+            } else {
               scope.$parent.exercises.quizQuestions[input].status = 'Incorrect';
             }
           }

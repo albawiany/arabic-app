@@ -9,6 +9,7 @@ angular.module('arabicApp', [
   'ui.bootstrap',
   'exerciseProvider',
   'arabicProvider',
+  'materialProvider',
   'ngAudio'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
