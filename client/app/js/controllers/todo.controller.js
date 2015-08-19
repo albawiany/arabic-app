@@ -22,8 +22,7 @@ angular.module('arabicApp')
         };
         $http.post('/api/scores', { name: $scope.newThing, score: 2 });
 
-    $http.get('/api/scores').success(function(input) {
-      console.log(input)
+    $http.get('/api/scores').success(function() {
     });
 
 
