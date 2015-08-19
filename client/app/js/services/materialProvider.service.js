@@ -53,8 +53,34 @@ angular.module('materialProvider', [])
           "correct" : 1,
           "answered" : [],
           "status" : ''
-        }]
+        }],
+      chapterOneVocab: [
+        {
+          part : "noun",
+          word: "word here",
+          meaning: "meaning",
+          plural : "plural",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "foo",
+            "bar"
+          ]
+        }
+      ],
+      chapterOneGrammar: [
+        {
+          title: "grammar",
+          body: "blah",
+          examples: []
+        }
+      ]
+
+
+
+
     };
+
 
     return materialProvider;
   }]);

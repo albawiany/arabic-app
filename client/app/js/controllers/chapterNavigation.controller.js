@@ -5,6 +5,6 @@
 angular.module('arabicApp')
   .controller('ChapterNavigationCtrl', ['$scope', 'chapterNavigation',function ($scope, chapterNavigation) {
 
-    $scope.chapterOne = chapterNavigation.chapterOne;
-    console.log($scope.chapterOne);
+    $scope.chapters = {};
+    $scope.chapters.chapterOne = chapterNavigation.chapterOne;
   }]);
