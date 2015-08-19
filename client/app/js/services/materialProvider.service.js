@@ -1,3 +1,5 @@
+// jshint ignore: start
+
 angular.module('materialProvider', [])
   .factory('materialProvider', [function () {
     'use strict';
