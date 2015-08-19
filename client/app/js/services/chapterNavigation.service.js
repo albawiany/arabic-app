@@ -7,7 +7,8 @@ angular.module('chapterNavigation', [])
         title: 'ابن بطوطة و اطول رحلة في التاريخ',
         vocabUrl: '/chapters/one/vocabulary.html',
         grammarUrl: '/chapters/one/grammar.html',
-        exercisesUrl:'/chapters/one/exercises.html'
+        exercisesUrl:'/chapters/one/exercises.html',
+        passagesUrl:'/chapters/one/passages.html'
 
       }
     };
@@ -24,13 +25,15 @@ angular.module('chapterNavigation', [])
         scope.grammar = "قواعد";
         scope.vocab = "مفردات";
         scope.exercises= "تمارين";
+        scope.passages= 'ابن بطوطة و رحلة في التاريخ';
       },
       template:
-        '<div class="chapter">' +
+      '<div class="chapter">' +
       '<div  class="header">{{chapterInformation.chapter + "   " + chapterInformation.title}}' +
-      '<div class="link" ><a ng-href="{{chapterInformation.grammarUrl}}">{{grammar}}</a></div>' +
       '<div class="link" ><a ng-href="{{chapterInformation.vocabUrl}}">{{vocab}}</a></div>' +
       '<div class="link" ><a ng-href="{{chapterInformation.exercisesUrl}}">{{exercises}}</a></div>' +
+      '<div class="link" ><a ng-href="{{chapterInformation.grammarUrl}}">{{grammar}}</a></div>' +
+      '<div class="link" ><a ng-href="{{chapterInformation.passagesUrl}}">{{passages}}</a></div>' +
       '</div>'+
       '</div>'
     };

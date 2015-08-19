@@ -56,25 +56,281 @@ angular.module('materialProvider', [])
         }],
       chapterOneVocab: [
         {
-          part : "noun",
-          word: "word here",
-          meaning: "meaning",
-          plural : "plural",
+          part : "",
+          word:"اَخِر",
+          meaning: "",
+          plural : "أَواخِر",
           conjugationPresent: "",
           conjugationPast : "",
+          examples: [
+            "اواخر الشهر",
+            "اواخر السنة"
+          ]
+        },
+        {
+          part : "",
+          word: "أوًّل",
+          meaning: "",
+          plural : "أَوائِل",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+                {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        },
+        {
+          part : "",
+          word: "",
+          meaning: "",
+          plural : "",
+          conjugationPresent: "",
+          conjugationPast : "",
+          examples: [
+            "",
+            ""
+          ]
+        }
+
+
+      ],
+      chapterOneGrammar: {
+          title: "grammar",
+          body: "blah",
           examples: [
             "foo",
             "bar"
           ]
         }
-      ],
-      chapterOneGrammar: [
-        {
-          title: "grammar",
-          body: "blah",
-          examples: []
-        }
-      ]
+
 
 
 

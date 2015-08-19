@@ -9,5 +9,4 @@ angular.module('arabicApp')
 
     $scope.exercises.quizQuestions = materialProvider.chapterOneExercises;
 
-
   }]);
