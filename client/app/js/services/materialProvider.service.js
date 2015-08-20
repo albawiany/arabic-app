@@ -57,11 +57,17 @@ angular.module('materialProvider', [])
       chapterOneVocab: [
         {
           part : "",
-          word:"اَخِر",
-          meaning: "",
-          plural : "أَواخِر",
+          wazan: "أ و خ",
+          root: "اَخِر",
+          rootPlural: "",
+          dipthote: 1,
+          word:"أَواخِر",
+          meaning: "last ones",
+          plural : "",
+          verbType: "",
+          gender: "المؤنث",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
             "اواخر الشهر",
             "اواخر السنة"
@@ -69,265 +75,168 @@ angular.module('materialProvider', [])
         },
         {
           part : "",
-          word: "أوًّل",
-          meaning: "",
-          plural : "أَوائِل",
+          wazan: "أ و ل",
+          root : "أًوَّل",
+          rootPlural : "",
+          dipthote: 1,
+          word: "أَوائِل",
+          meaning: "first ones",
+          plural : "",
+          verbType: "",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
-            "",
+            "أَوائل القرن",
             ""
           ]
         },
         {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
+          part : "الأسم",
+          wazan: "ب ل د",
+          root : "بَلَد",
+          rootPlural : "بِلاد",
+          dipthote: 0,
+          word: "بَلْدة",
+          meaning: "small city",
+          plural : "بلْدات",
+          verbType: "",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
-            "",
-            ""
+            "زرتها بلدةً"
           ]
         },
         {
           part : "",
-          word: "",
-          meaning: "",
+          wazan: "ت ر ج ع",
+          root : "ترجمع، مُترجم",
+          rootPlural : "",
+          dipthote: 1,
+          word: "تَرْجَمَ",
+          meaning: "to translate",
           plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
+          verbType: "",
+          conjugationPresent: "يُتَرجِم",
+          verbalNoun : "التّرجَمة",
           examples: [
-            "",
-            ""
+            "يُتَرجم الطالب الكاتب الفرسي"
           ]
         },
         {
           part : "",
+          wazan: "ح ف ظ",
+          root : "حَفِظَ",
+          rootPlural :"",
+          dipthote: 1,
           word: "",
-          meaning: "",
+          meaning: "first ones",
           plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
+          verbType: "",
+          conjugationPresent: "يَحفَظ",
+          verbalNoun : "الحِفظ",
           examples: [
-            "",
-            ""
+            "في صعري حفظت القرآن الكريم"
           ]
         },
         {
           part : "",
-          word: "",
-          meaning: "",
-          plural : "",
+          wazan: "ح ق ق",
+          root : "في الحقيقة، حقيقيّ",
+          rootPlural : "",
+          dipthote: 1,
+          word: "حَقيقة",
+          meaning: "truth, fact",
+          plural : "حَقائِق",
+          verbType: "",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
-            "",
-            ""
+            "لا أعرفُ كل حقائق الحياة"
           ]
         },
         {
           part : "",
-          word: "",
-          meaning: "",
+          wazan: "خ ل ف",
+          root : "جليفة",
+          rootPlural : "حُلَافاءِ",
+          dipthote: 1,
+          word: "الخِلافة",
+          meaning: "caliphate",
           plural : "",
+          verbType: "",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
-            "",
-            ""
+            "هل هنك حلافة في السرق الأوسط"
           ]
         },
         {
           part : "",
-          word: "",
-          meaning: "",
+          wazan: "ش ه ر",
+          root : "مشهور،",
+          rootPlural : "مشهورون",
+          dipthote: 0,
+          word: "اِشتَهَرَ ب",
+          meaning: "to be famous for",
           plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
+          verbType: "",
+          conjugationPresent: "يَشتَهِر ب",
+          verbalNoun : "",
           examples: [
-            "",
-            ""
+            "ابن بطوطة يشتهر باالأستمكشفة مالي"
           ]
         },
         {
           part : "",
-          word: "",
-          meaning: "",
+          wazan: "ص ح ب",
+          root : "صاحب",
+          rootPlural : "أصحاب",
+          dipthote: 1,
+          word: "صاحب",
+          meaning: "(also) owner, possesor, holder of",
           plural : "",
+          verbType: "",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
-            "",
-            ""
+            "صاحب البيت"
           ]
         },
         {
           part : "",
-          word: "",
-          meaning: "",
+          wazan: "ط و ل",
+          root : "طويل",
+          rootPlural : "أطوَل",
+          dipthote: 1,
+          word: "طول",
+          meaning: "length",
           plural : "",
+          verbType: "",
           conjugationPresent: "",
-          conjugationPast : "",
+          verbalNoun : "",
           examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-                {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
-          ]
-        },
-        {
-          part : "",
-          word: "",
-          meaning: "",
-          plural : "",
-          conjugationPresent: "",
-          conjugationPast : "",
-          examples: [
-            "",
-            ""
+            "طول الجدول"
           ]
         }
-
-
       ],
       chapterOneGrammar: {
-          title: "grammar",
-          body: "blah",
+        title: "زمن الفعل: الماضي و المضارع",
+        body: "In working on the the ابن بطوطة text above" +
+        "you noticed that both الماضي و المضارع may be used to" +
+        "describe past events. In other words the difference" +
+        "between الماضي و المضارع is not limited to tense or time" +
+        ", but inclues the nature of the action as well." +
+        "The use of المضارع to describe continous or repeated" +
+        "actions  that took place in the past is an important" +
+        "part of its function, and occurs often in narrative contexts" +
+        "                                                           " +
+        "You have seen many examples of كان being used in combination" +
+        "with مضارع verbs to express a past continous or habitual action ",
           examples: [
-            "foo",
-            "bar"
+            "I used to write her letters:" +
+            "كنت أكتب لها بعض الرسائل",
+            "I wrote her some letters" +
+            "كتبت لها بعض الرسائل"
           ]
         }
 
