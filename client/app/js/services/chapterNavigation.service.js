@@ -1,3 +1,4 @@
+// jshint ignore: start
 angular.module('chapterNavigation', [])
   .factory('chapterNavigation', [function () {
     'use strict';

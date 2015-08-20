@@ -1,19 +1,16 @@
 div(ng-include='"components/navbar/navbar.html"')
 .login-page-container
-      form(name='form',ng-submit='login(form)', novalidate='')
-        .form-group
-          label Email
+  form(name='form',ng-submit='login(form)', novalidate='')
+      .login-page-body
+        .input-text-group
+          .fa.fa-envelope.fa-4x
           input(type='text', name='email', ng-model='user.email')
-        .form-group
-          label Password
+        .input-text-group
+          .form-group.fa.fa-lock.fa-5x
           input(type='password', name='password', ng-model='user.password')
-        .form-group
-        .button-container
-          button(type='submit') Login
-          button(ng-click='redirectToSignup()') Sign Up
+        .input-button-group
+          button.btn-primary.center-block(type='submit') Login
         .error-box
           p(ng-show='form.email.$error.required && form.password.$error.required && submitted')
             | Please enter your email and password.
           p {{ errors.other }}
-
-
