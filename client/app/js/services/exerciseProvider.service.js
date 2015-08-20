@@ -64,9 +64,9 @@ angular.module('exerciseProvider', [])
     '<div class="vocab-item" ng-repeat="item in vocab track by $index">' +
     '<div  class="word"> {{item.word}}</div> ' +
     '<div class="meaning">{{item.meaning}}</div>' +
-    '<div class="noun" ng-show="!item.conjugationPresent" >{{item.plural}}</div>' +
-    '<div class="verb" ng-show="item.conjugationPresent" >{{item.conjugationPresent}} </div>' +
-    '<div class="verb" ng-show="item.conjugationPresent">{{item.conjugationPast}} </div>' +
+    '<div class="info" ng-show="!item.conjugationPresent" >{{item.plural}}</div>' +
+    '<div class="info" ng-show="item.conjugationPresent" >{{item.conjugationPresent}} </div>' +
+    '<div class="info" ng-show="item.conjugationPresent">{{item.conjugationPast}} </div>' +
     '<div class="examples" ng-repeat="example in item.examples">{{example}} </div>' +
     '</div>'
   };

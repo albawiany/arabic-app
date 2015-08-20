@@ -29,11 +29,11 @@ angular.module('chapterNavigation', [])
       },
       template:
       '<div class="chapter">' +
-      '<div  class="header">{{chapterInformation.chapter + "   " + chapterInformation.title}}' +
+      '<div  class="header">{{chapterInformation.title}}' +
       '<div class="link" ><a ng-href="{{chapterInformation.vocabUrl}}">{{vocab}}</a></div>' +
+      '<div class="link" ><a ng-href="{{chapterInformation.passagesUrl}}">{{passages}}</a></div>' +
       '<div class="link" ><a ng-href="{{chapterInformation.exercisesUrl}}">{{exercises}}</a></div>' +
       '<div class="link" ><a ng-href="{{chapterInformation.grammarUrl}}">{{grammar}}</a></div>' +
-      '<div class="link" ><a ng-href="{{chapterInformation.passagesUrl}}">{{passages}}</a></div>' +
       '</div>'+
       '</div>'
     };
