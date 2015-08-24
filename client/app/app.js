@@ -11,7 +11,9 @@ angular.module('arabicApp', [
   'arabicProvider',
   'materialProvider',
   'ngAudio',
-  'chapterNavigation'
+  'chapterNavigation',
+  'ngAnimate',
+  'mgcrea.ngStrap'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider

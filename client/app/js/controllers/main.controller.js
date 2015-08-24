@@ -1,6 +1,9 @@
+// jshint ignore: start
+
 'use strict';
 
 angular.module('arabicApp')
-  .controller('MainCtrl', [function () {
+  .controller('MainCtrl', ['$scope', function ($scope) {
+
 
   }]);

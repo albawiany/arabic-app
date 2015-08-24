@@ -1,6 +1,6 @@
 'use strict';
 angular.module('arabicApp')
-  .controller('LoginCtrl', ['$scope','Auth','$location','$window', function ($scope, Auth, $location,$window) {
+  .controller('LoginCtrl', ['$scope','Auth','$location','$window','$timeout', function ($scope, Auth, $location,$window,$timeout) {
     $scope.user = {};
     $scope.errors = {};
 
@@ -21,6 +21,10 @@ angular.module('arabicApp')
         })
         .catch( function(err) {
           $scope.errors.other = err.message;
+            $timeout(function(){
+              $scope.errors.other = "";
+            }, 2000);
+
         });
       }
     };
