@@ -5,25 +5,18 @@ div(ng-include='"components/navbar/navbar.html"')
           .input-text-group
             .fa.fa-user.fa-4x
             input(type='text', name='name', ng-model='user.name', required='', placeholder='username')
-            p(ng-show='form.name.$error.required && submitted')
-              | A name is required
+            p(ng-show='form.name.$error.required && submitted') A name is required
           .input-text-group
             .fa.fa-envelope.fa-3x
             input(type='email', name='email', ng-model='user.email', required='', mongoose-error='', placeholder='email')
-
           .input-text-group
             .fa.fa-lock.fa-4x
             input(type='password', name='password', ng-model='user.password', ng-minlength='3', required='', mongoose-error='', placeholder='password')
-            p(ng-show='(form.password.$error.minlength || form.password.$error.required) && submitted')
-              | Password must be at least 3 characters. askldfjlaksjdfklajsdlkfjalksjdflkjaskldfjlkasjdfl
-            p(ng-show='form.password.$error.mongoose')
-              | {{ errors.password }}
-            p(ng-show='form.email.$error.email && submitted')
-              | Doesn't look like a valid email.
-            p(ng-show='form.email.$error.required && submitted')
-              | What's your email address?
-            p(ng-show='form.email.$error.mongoose')
-              | {{ errors.email }}
+            p(ng-show='(form.password.$error.minlength || form.password.$error.required) && submitted') Password must be at least 3 characters.
+            p(ng-show='form.password.$error.mongoose') {{ errors.password }}
+            p(ng-show='form.email.$error.email && submitted') Doesn't look like a valid email.
+            p(ng-show='form.email.$error.required && submitted') What's your email address?
+            p(ng-show='form.email.$error.mongoose') {{ errors.email }}
           .input-button-group
               button.btn-primary.center-block(type='submit') Sign up
 
