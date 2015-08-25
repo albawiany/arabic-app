@@ -50,11 +50,18 @@ angular.module('materialProvider', [])
           gender: "المؤنث",
           conjugationPresent: "",
           verbalNoun: "",
-          examples: [
-            "اواخر الشهر",
-            "اواخر السنة"
+          examples: [{
+            text: "اواخر الشهر",
+            audio: ""
+          },
+            {
+              text: "اواخر السنة",
+              audio: ""
+            }
           ],
-          audio: "http://static1.grsites.com/archive/sounds/birds/birds007.wav"
+          wordAudio: "https://dl.dropboxusercontent.com/s/223u1hx7085ckam/lastones.m4a?dl=0",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -69,9 +76,13 @@ angular.module('materialProvider', [])
           conjugationPresent: "",
           verbalNoun: "",
           examples: [
-            "أَوائل القرن",
-            ""
-          ]
+            {
+              text: "أَوائل القرن",
+              audio: ""
+            }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "الأسم",
@@ -85,9 +96,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "",
           verbalNoun: "",
-          examples: [
-            "زرتها بلدةً"
-          ]
+          examples: [ {
+            text : "زرتها بلدةً",
+            audio: ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -101,9 +116,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "يُتَرجِم",
           verbalNoun: "التّرجَمة",
-          examples: [
-            "يُتَرجم الطالب الكاتب الفرسي"
-          ]
+          examples: [{
+              text: "يُتَرجم الطالب الكاتب الفرسي",
+              audio : ""
+            }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -117,9 +136,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "يَحفَظ",
           verbalNoun: "الحِفظ",
-          examples: [
-            "في صعري حفظت القرآن الكريم"
-          ]
+          examples: [{
+            text: "في صعري حفظت القرآن الكريم",
+            audio : ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -133,9 +156,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "",
           verbalNoun: "",
-          examples: [
-            "لا أعرفُ كل حقائق الحياة"
-          ]
+          examples: [{
+            text: "لا أعرفُ كل حقائق الحياة",
+            audio: ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -149,9 +176,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "",
           verbalNoun: "",
-          examples: [
-            "هل هنك حلافة في السرق الأوسط"
-          ]
+          examples: [{
+            text: "هل هنك حلافة في السرق الأوسط",
+            audio: ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -165,9 +196,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "يَشتَهِر ب",
           verbalNoun: "",
-          examples: [
-            "ابن بطوطة يشتهر باالأستمكشفة مالي"
-          ]
+          examples: [{
+            text: "ابن بطوطة يشتهر باالأستمكشفة مالي,",
+            audio : ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -181,9 +216,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "",
           verbalNoun: "",
-          examples: [
-            "صاحب البيت"
-          ]
+          examples: [{
+          text:  "صاحب البيت",
+          audio : ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         },
         {
           part: "",
@@ -197,9 +236,13 @@ angular.module('materialProvider', [])
           verbType: "",
           conjugationPresent: "",
           verbalNoun: "",
-          examples: [
-            "طول الجدول"
-          ]
+          examples: [{
+            text: "طول الجدول",
+            audio: ""
+          }],
+          wordAudio: "",
+          wordPluralAudio: "",
+          verbPresentAudio: ""
         }
       ],
       chapterOneGrammar: {

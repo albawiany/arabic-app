@@ -67,6 +67,7 @@ angular.module('exerciseProvider', [])
         scope.jiim = "ج";
 
         scope.playSound = function (input) {
+          if(!input) return;
           var audio = ngAudio.load(input);
           if(audio.play) {
             audio.play();
@@ -74,13 +75,12 @@ angular.module('exerciseProvider', [])
         };
       },
       template: '<div class="vocab-item" ng-repeat="item in vocab track by $index">' +
-      '<div  class="word clickable" ng-click="playSound(item.audio)"> {{item.word}}</div> ' +
+      '<div  class="word clickable" ng-click="playSound(item.wordAudio)"> {{item.word}}</div> ' +
       '<div class="meaning">{{item.meaning}}</div>' +
-      '<div class="info" ng-show="!item.conjugationPresent && item.plural" >{{item.plural}}<div class="jiim">{{jiim}}</div></div>' +
-      '<div class="info" ng-show="item.conjugationPresent" >{{item.conjugationPresent}} </div>' +
-      '<div class="info" ng-show="item.conjugationPresent">{{item.conjugationPast}} </div>' +
+      '<div class="info" ng-show="!item.conjugationPresent && item.plural" ng-click=playSound(item.wordPluralAudio) >{{item.plural}}<div class="jiim">{{jiim}}</div></div>' +
+      '<div class="info" ng-show="item.conjugationPresent" ng-click="playSound(item.verbPresentAudio)" >{{item.conjugationPresent}} </div>' +
       '<div class="examples" ng-repeat="example in item.examples">' +
-      '<div class="example"> {{example}} </div>' + '</div>' +
+      '<div class="example" ng-click="playSound(example.audio)"> {{example.text}} </div>' + '</div>' +
       '<div class="line-separator"></div>' +
       '</div>'
     };
