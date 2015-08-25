@@ -10,6 +10,13 @@ angular.module('exerciseProvider', [])
       restrict: 'E',
       link: function (scope, element, attrs) {
         scope.passageArray = JSON.parse(attrs.passageArray);
+        scope.playSound = function (input) {
+          if (!input) return;
+          var audio = ngAudio.load(input);
+          if (audio.play) {
+            audio.play();
+          }
+        }
       },
       template: '<div  class="passage-box-container" ng-repeat="n in passageArray track by $index">' +
       '<div class="passage-box">' +
@@ -67,9 +74,9 @@ angular.module('exerciseProvider', [])
         scope.jiim = "ج";
 
         scope.playSound = function (input) {
-          if(!input) return;
+          if (!input) return;
           var audio = ngAudio.load(input);
-          if(audio.play) {
+          if (audio.play) {
             audio.play();
           }
         };
