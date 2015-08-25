@@ -1,4 +1,4 @@
-.passage-box-container{
+.passage-box-container {
 
   -webkit-border-image: url(border_art.png) 100 round; /* Safari 3.1-5 */
   -o-border-image: url(border_art.png) 100 round; /* Opera 11-12.1 */
@@ -8,27 +8,25 @@
   font-family: ScheherazadeRegular;
   .font-smoothing();
   .center-block();
-  .size(800px,auto);
+  .size(800px, auto);
+  direction: rtl;
 
-}
+  .unit-title {
+    font-size: 60px;
+    color: maroon;
+    .center-block();
+    border-bottom: 1px solid #313030;
+  }
 
-.passage-box {
-}
-.unit-title {
-  text-align:right;
-  font-size: 60px;
-  color: maroon;
-  .center-block();
-}
+  .passage-title {
+    text-align: right;
+    font-size: 45px;
+    .center-block();
+  }
 
-.passage-title{
-  text-align : right;
-  font-size: 45px;
-  .center-block();
-}
-
-.passage-text {
-  font-size: 40px;
-  text-align: right;
-  .center-block();
+  .passage-text {
+    font-size: 40px;
+    text-align: justify;
+    .center-block();
+  }
 }

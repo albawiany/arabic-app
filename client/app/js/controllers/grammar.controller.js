@@ -4,4 +4,6 @@ angular.module('arabicApp')
 
     $scope.grammar = {};
     $scope.grammar.chapterOne = materialProvider.chapterOneGrammar;
+
+    console.log($scope);
   }]);

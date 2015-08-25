@@ -56,39 +56,44 @@ angular.module('exerciseProvider', [])
       '</div>' + '</div>'
     };
   })
-  .directive('insertVocabulary', function () {
-  'use strict';
-  return {
-    restrict: 'E',
-    scope: {
-      vocab: '='
-    },
-    link: function(scope){
-      scope.jiim = "ج";
-    },
-    template:
-    '<div class="vocab-item" ng-repeat="item in vocab track by $index">' +
-    '<div  class="word"> {{item.word}}</div> ' +
-    '<div class="meaning">{{item.meaning}}</div>' +
-    '<div class="info" ng-show="!item.conjugationPresent && item.plural" >{{item.plural}}<div class="jiim">{{jiim}}</div></div>' +
-    '<div class="info" ng-show="item.conjugationPresent" >{{item.conjugationPresent}} </div>' +
-    '<div class="info" ng-show="item.conjugationPresent">{{item.conjugationPast}} </div>' +
-    '<div class="examples" ng-repeat="example in item.examples">' +
-    '<div class="example"> {{example}} </div>'+ '</div>' +
-    '<div class="line-separator"></div>' +
-    '</div>'
-  };
-}).directive('insertGrammar', function () {
+  .directive('insertVocabulary', ['ngAudio', function (ngAudio) {
+    'use strict';
+    return {
+      restrict: 'E',
+      scope: {
+        vocab: '='
+      },
+      link: function (scope) {
+        scope.jiim = "ج";
+
+        scope.playSound = function (input) {
+          var audio = ngAudio.load(input);
+          if(audio.play) {
+            audio.play();
+          }
+        };
+      },
+      template: '<div class="vocab-item" ng-repeat="item in vocab track by $index">' +
+      '<div  class="word clickable" ng-click="playSound(item.audio)"> {{item.word}}</div> ' +
+      '<div class="meaning">{{item.meaning}}</div>' +
+      '<div class="info" ng-show="!item.conjugationPresent && item.plural" >{{item.plural}}<div class="jiim">{{jiim}}</div></div>' +
+      '<div class="info" ng-show="item.conjugationPresent" >{{item.conjugationPresent}} </div>' +
+      '<div class="info" ng-show="item.conjugationPresent">{{item.conjugationPast}} </div>' +
+      '<div class="examples" ng-repeat="example in item.examples">' +
+      '<div class="example"> {{example}} </div>' + '</div>' +
+      '<div class="line-separator"></div>' +
+      '</div>'
+    };
+  }]).directive('insertGrammar', function () {
     'use strict';
     return {
       restrict: 'E',
       scope: {
         grammar: '='
       },
-      template:
-      '<div class="grammar">' +
+      template: '<div class="grammar">' +
       '<div class="title" >{{grammar.title}}</div>' +
-      '<div class="body" >{{grammar.body}} </div>' +
+      '<div class="body"><div ng-repeat="paragraph in grammar.body"> {{paragraph}} </div></div>' +
       '<div class="examples" ng-repeat="example in grammar.examples">{{example}} </div>' +
       '</div>'
     };
