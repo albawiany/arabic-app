@@ -15,7 +15,8 @@ angular.module('exerciseProvider', [])
       '<div class="passage-box">' +
       '<div class="unit-title"><ul>{{n.unit}}</ul></div>' +
       '<div class="passage-title">{{n.title}}</div>' +
-      '<div class="passage-text">{{n.content}}</div>' +
+      '<div class="passage-text">' +
+      '<div class="new-paragraph" ng-repeat="paragraph in n.content">{{paragraph}}</div>' +
       '</div>' +
       '</div>'
     };
@@ -46,9 +47,11 @@ angular.module('exerciseProvider', [])
       },
       template: '<div ng-repeat="n in questionArray track by $index">' +
       '<div class="question">{{n.question}}' +
-      '<div class="option" ng-click="answerTheQuestion($index,0)">{{n.option1}}</div>' +
-      '<div class="option" ng-click="answerTheQuestion($index,1)">{{n.option2}}</div>' +
-      '<div class="option" ng-click="answerTheQuestion($index,2)">{{n.option3}}</div>' +
+      '<div class="line-separator"></div>' +
+      '<div class="option clickable"><div class="word clickable" ng-click="answerTheQuestion($index,0)">{{n.option1}}</div>' +
+      '<div class="option clickable"><div class="word clickable" ng-click="answerTheQuestion($index,1)">{{n.option2}}</div>' +
+      '<div class="option clickable"><div class="word clickable" ng-click="answerTheQuestion($index,2)">{{n.option3}}</div>' +
+      '</div>' +
       '<div ng-show="n.status" class="status-message"> {{n.status}}</div>' +
       '</div>' + '</div>'
     };
@@ -60,14 +63,19 @@ angular.module('exerciseProvider', [])
     scope: {
       vocab: '='
     },
+    link: function(scope){
+      scope.jiim = "ج";
+    },
     template:
     '<div class="vocab-item" ng-repeat="item in vocab track by $index">' +
     '<div  class="word"> {{item.word}}</div> ' +
     '<div class="meaning">{{item.meaning}}</div>' +
-    '<div class="info" ng-show="!item.conjugationPresent" >{{item.plural}}</div>' +
+    '<div class="info" ng-show="!item.conjugationPresent && item.plural" >{{item.plural}}<div class="jiim">{{jiim}}</div></div>' +
     '<div class="info" ng-show="item.conjugationPresent" >{{item.conjugationPresent}} </div>' +
     '<div class="info" ng-show="item.conjugationPresent">{{item.conjugationPast}} </div>' +
-    '<div class="examples" ng-repeat="example in item.examples">{{example}} </div>' +
+    '<div class="examples" ng-repeat="example in item.examples">' +
+    '<div class="example"> {{example}} </div>'+ '</div>' +
+    '<div class="line-separator"></div>' +
     '</div>'
   };
 }).directive('insertGrammar', function () {

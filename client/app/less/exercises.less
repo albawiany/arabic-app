@@ -1,24 +1,23 @@
 .exercises-container{
+  .size(800px,auto);
+  .center-block();
+  border-width: 20px;
+
+  -webkit-border-image: url(border_art.png) 100 round; /* Safari 3.1-5 */
+  -o-border-image: url(border_art.png) 100 round; /* Opera 11-12.1 */
+  border-image: url(border_art.png) 100 round;
+  .font-smoothing();
+
   font-family: ScheherazadeRegular;
+
   .question{
-    .size(800px,auto);
+    .size(700px,auto);
+    text-align: right;
     .center-block();
-    background: lightgrey;
-    color: maroon;
     font-size: 60px;
-    text-align: center;
     padding-bottom: 25px;
   }
   .option{
-    margin-right: 50px;
-    text-align: right;
-    font-size: 45px;
-    color: black;
-    &:hover {
-      -moz-box-shadow: 0 0 5px #fff;
-      -webkit-box-shadow: 0 0 5px #fff;
-      box-shadow: 0 0 5px #fff;
-    }
    }
   .status-message{
     font-size: 35px;
